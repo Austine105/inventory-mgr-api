@@ -1,7 +1,20 @@
-# **INVENTORY MANAGER API**.
+# **INVENTORY MANAGER API**
+
+<br/>
 
 ### Description
--  Inventory Mgt Service for perishable goods.
+- Inventory Mgt Service for perishable goods.
+
+<br/>
+
+### Technologies used:
+- TypeScript
+- Express
+- [Redis](https://redis.io/): a fast, open-source, in-memory key-value data store for use as a cache, message broker, and queue
+- Database: [PostgresSQL](https://www.postgresql.org/)
+- [NestJS](https://nestjs.com/): a progressive Node.js framework for building efficient, reliable and scalable server-side applications with Express and TypeScript.
+
+
 
 <br />
 
@@ -34,18 +47,11 @@ $ npm run start
 ```bash
 $ npm run test
 ```
+<br/>
 
 ### Check out the API by clicking the following links:
-- #### [Swagger Doc] - localhost:{{port}}/api/docs/
-- #### [Postman Doc]()
-- #### [API URL] localhost:{{port}}/api
+- #### [Swagger Documentation](https://inventory-mgr-api.herokuapp.com/docs/)
+- #### [Postman Documentation](https://documenter.getpostman.com/view/3166095/TzCV3Q8o)
+- #### [API URL](https://inventory-mgr-api.herokuapp.com/index)
 <br />
 
-<br />
-<p align="center"> Built with </p>
-
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
-
-<p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications with <b>Express</b>.</p>
