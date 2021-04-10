@@ -7,12 +7,12 @@
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
-    "start": "npm run seeder && nest start",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
     "dev": "nest start --watch",
     "postinstall": "npm run build",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main.js",
-    "seeder": "npx nestjs-command seeders:all",
     "test": "jest && exit"
   },
   "dependencies": {
@@ -28,7 +28,6 @@
     "class-transformer": "^0.3.1",
     "class-validator": "^0.12.2",
     "dotenv": "^8.2.0",
-    "nestjs-command": "^2.0.0",
     "pg": "^8.3.3",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.5",

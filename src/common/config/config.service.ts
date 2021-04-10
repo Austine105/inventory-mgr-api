@@ -49,11 +49,8 @@ class ConfigService {
     return this.getValue('DATABASE_URL', true);
   }
 
-  public getRedisConfig() {
-    return {
-      host: this.getValue('REDIS_HOST', true),
-      port: parseInt(this.getValue('REDIS_PORT', true)),
-    };
+  public getRedisUrl() {
+    return this.getValue('REDIS_URL', true)
   }
 
   public getSequelizeConfig(): SequelizeModuleOptions {
@@ -70,8 +67,7 @@ class ConfigService {
 const configService = new ConfigService(process.env)
   .ensureValues([
     'DATABASE_URL',
-    'REDIS_PORT',
-    'REDIS_HOST'
+    'REDIS_URL',
   ]);
 
 export { configService };

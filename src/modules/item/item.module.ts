@@ -10,7 +10,7 @@ import { configService } from 'src/common/config/config.service';
   imports: [
     BullModule.registerQueue({
       name: 'items',
-      redis: configService.getRedisConfig(),
+      redis: configService.getRedisUrl(),
     }),
   ],
   providers: [ItemService, ...ItemProvider, ItemProcessor],
